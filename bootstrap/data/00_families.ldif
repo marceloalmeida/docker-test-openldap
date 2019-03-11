@@ -1,0 +1,5 @@
+dn: ou=families,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: organizationalUnit
+description: Simpsons families
+ou: families

@@ -1,0 +1,5 @@
+dn: ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: organizationalUnit
+description: Simpsons Character
+ou: character

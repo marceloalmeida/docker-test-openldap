@@ -1,0 +1,9 @@
+dn: cn=simpson,ou=families,dc=thesimpsons,dc=com
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: simpson
+uniqueMember: cn=homer,ou=character,dc=thesimpsons,dc=com
+uniqueMember: cn=marge,ou=character,dc=thesimpsons,dc=com
+uniqueMember: cn=bart,ou=character,dc=thesimpsons,dc=com
+uniqueMember: cn=lisa,ou=character,dc=thesimpsons,dc=com
+uniqueMember: cn=maggie,ou=character,dc=thesimpsons,dc=com

@@ -1,0 +1,11 @@
+dn: cn=rod,ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: rod
+sn: Flanders
+givenName: Rod
+mail: rod.flanders@thesimpsons.com
+uid: rod.flanders@thesimpsons.com
+userPassword:: cGFzc3dvcmQ=

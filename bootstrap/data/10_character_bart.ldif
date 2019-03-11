@@ -1,0 +1,11 @@
+dn: cn=bart,ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: bart
+sn: Simpson
+givenName: Bart
+mail: bart.simpson@thesimpsons.com
+uid: bart.simpson@thesimpsons.com
+userPassword:: cGFzc3dvcmQ=

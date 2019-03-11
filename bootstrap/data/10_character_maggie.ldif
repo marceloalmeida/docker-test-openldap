@@ -1,0 +1,11 @@
+dn: cn=maggie,ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: maggie
+sn: Simpson
+givenName: Maggie
+mail: maggie.simpson@thesimpsons.com
+uid: maggie.simpson@thesimpsons.com
+userPassword:: cGFzc3dvcmQ=

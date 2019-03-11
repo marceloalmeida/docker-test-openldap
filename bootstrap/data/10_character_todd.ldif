@@ -1,0 +1,11 @@
+dn: cn=todd,ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: todd
+sn: Flanders
+givenName: Todd
+mail: todd.flanders@thesimpsons.com
+uid: todd.flanders@thesimpsons.com
+userPassword:: cGFzc3dvcmQ=

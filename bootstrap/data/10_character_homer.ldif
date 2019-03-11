@@ -1,0 +1,11 @@
+dn: cn=homer,ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: homer
+sn: Simpson
+givenName: Homer
+mail: homer.simpson@thesimpsons.com
+uid: homer.simpson@thesimpsons.com
+userPassword:: cGFzc3dvcmQ=

@@ -1,0 +1,11 @@
+dn: cn=lisa,ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: lisa
+sn: Simpson
+givenName: Lisa
+mail: lisa.simpson@thesimpsons.com
+uid: lisa.simpson@thesimpsons.com
+userPassword:: cGFzc3dvcmQ=

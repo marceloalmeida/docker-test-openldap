@@ -1,0 +1,11 @@
+dn: cn=marge,ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: marge
+sn: Simpson
+givenName: marge
+mail: marge.simpson@thesimpsons.com
+uid: marge.simpson@thesimpsons.com
+userPassword:: cGFzc3dvcmQ=

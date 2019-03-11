@@ -1,0 +1,11 @@
+dn: cn=ned,ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: ned
+sn: Flanders
+givenName: Ned
+mail: ned.flanders@thesimpsons.com
+uid: ned.flanders@thesimpsons.com
+userPassword:: cGFzc3dvcmQ=

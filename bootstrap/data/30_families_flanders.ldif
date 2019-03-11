@@ -1,0 +1,8 @@
+dn: cn=flanders,ou=families,dc=thesimpsons,dc=com
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: flanders
+uniqueMember: cn=ned,ou=character,dc=thesimpsons,dc=com
+uniqueMember: cn=maude,ou=character,dc=thesimpsons,dc=com
+uniqueMember: cn=rod,ou=character,dc=thesimpsons,dc=com
+uniqueMember: cn=todd,ou=character,dc=thesimpsons,dc=com

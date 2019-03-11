@@ -1,0 +1,11 @@
+dn: cn=maude,ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: maude
+sn: Flanders
+givenName: Maude
+mail: maude.flanders@thesimpsons.com
+uid: maude.flanders@thesimpsons.com
+userPassword:: cGFzc3dvcmQ=
