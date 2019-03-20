@@ -1,0 +1,11 @@
+dn: cn=clancy,ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: clancy
+sn: Wiggum
+givenName: Clancy
+mail: clancy.wiggum@thesimpsons.com
+uid: clancy.wiggum@thesimpsons.com
+userPassword:: cGFzc3dvcmQ=

@@ -1,0 +1,11 @@
+dn: cn=ralph,ou=character,dc=thesimpsons,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: ralph
+sn: Wiggum
+givenName: Ralph
+mail: ralph.wiggum@thesimpsons.com
+uid: ralph.wiggum@thesimpsons.com
+userPassword:: cGFzc3dvcmQ=
