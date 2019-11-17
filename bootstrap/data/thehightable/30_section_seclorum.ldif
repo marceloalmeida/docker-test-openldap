@@ -1,0 +1,8 @@
+dn: cn=seclorum,ou=sections,dc=thehightable,dc=com
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: seclorum
+uniqueMember: cn=vigo,ou=individual,dc=thehightable,dc=com
+uniqueMember: cn=binxie,ou=individual,dc=thehightable,dc=com
+uniqueMember: cn=velos,ou=individual,dc=thehightable,dc=com
+uniqueMember: cn=inocencia,ou=individual,dc=thehightable,dc=com

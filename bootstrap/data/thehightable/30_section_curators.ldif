@@ -1,0 +1,8 @@
+dn: cn=curators,ou=sections,dc=thehightable,dc=com
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: curators
+uniqueMember: cn=administrator,ou=individual,dc=thehightable,dc=com
+uniqueMember: cn=operator,ou=individual,dc=thehightable,dc=com
+uniqueMember: cn=adjudicator,ou=individual,dc=thehightable,dc=com
+uniqueMember: cn=addy,ou=individual,dc=thehightable,dc=com

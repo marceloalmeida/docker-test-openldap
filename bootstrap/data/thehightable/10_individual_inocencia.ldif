@@ -1,0 +1,11 @@
+dn: cn=inocencia,ou=individual,dc=thehightable,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: inocencia
+sn: Seclorum
+givenName: inocencia
+mail: inocencia@thehightable.com
+uid: inocencia@thehightable.com
+userPassword:: cGFzc3dvcmQ=
