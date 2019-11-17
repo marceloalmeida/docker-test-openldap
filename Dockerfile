@@ -21,7 +21,8 @@ COPY ./run.sh /run.sh
 ADD ./bootstrap /bootstrap
 
 # Initialize LDAP with data
-RUN /bin/bash /bootstrap/slapd-init.sh
+ARG DATASET=thesimpsons
+RUN /bin/bash /bootstrap/slapd-init.sh ${DATASET}
 
 VOLUME ["/etc/ldap/slapd.d", "/etc/ldap/ssl", "/var/lib/ldap", "/run/slapd"]
 
