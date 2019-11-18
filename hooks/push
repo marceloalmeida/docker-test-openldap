@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+echo "------ HOOK START - PUSH -------"
+
+docker push $DOCKER_REPO:thesimpsons
+docker push $DOCKER_REPO:thehightable
+
+echo "------ HOOK END - BUILD -------"
