@@ -1,0 +1,6 @@
+dn: cn=continental,ou=sections,dc=thehightable,dc=com
+objectclass: groupOfUniqueNames
+objectclass: top
+cn: continental
+uniqueMember: cn=winston,ou=individual,dc=thehightable,dc=com
+uniqueMember: cn=charon,ou=individual,dc=thehightable,dc=com

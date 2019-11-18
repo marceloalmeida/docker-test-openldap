@@ -1,0 +1,5 @@
+dn: ou=sections,dc=thehightable,dc=com
+objectClass: top
+objectClass: organizationalUnit
+description: The High Table Sections
+ou: sections

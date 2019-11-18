@@ -4,14 +4,18 @@ set -eu
 readonly DATA_DIR="/bootstrap/data"
 readonly CONFIG_DIR="/bootstrap/config"
 
-readonly LDAP_DOMAIN=thesimpsons.com
-readonly LDAP_ORGANISATION="The Simpsons"
-readonly LDAP_BINDDN="cn=admin,dc=thesimpsons,dc=com"
-readonly LDAP_SECRET=password
-
 readonly LDAP_SSL_KEY="/etc/ldap/ssl/ldap.key"
 readonly LDAP_SSL_CERT="/etc/ldap/ssl/ldap.crt"
 
+DATASET_OPTIONS=("thesimpsons" "thehightable")
+DATASET="thesimpsons"
+
+function usage() {
+    local name=$(basename "$0")
+
+    echo >&2 "Usage: ${name} [thesimpsons|thehightable]"
+    exit 1
+}
 
 reconfigure_slapd() {
     echo "Reconfigure slapd..."
@@ -68,7 +72,7 @@ configure_msad_features(){
 
 load_initial_data() {
     echo "Load data..."
-    local data=$(find ${DATA_DIR} -maxdepth 1 -name \*_\*.ldif -type f | sort)
+    local data=$(find ${DATA_DIR}/"${DATASET}" -maxdepth 1 -name \*_\*.ldif -type f | sort)
     for ldif in ${data}; do
         echo "Processing file ${ldif}..."
         ldapadd -x -H ldapi:/// \
@@ -78,9 +82,26 @@ load_initial_data() {
     done
 }
 
+function check_input () {
+    if [ $# -gt 0 ] && [ -n "$1" ]; then
+        local valid=
+        for ds in "${DATASET_OPTIONS[@]}"; do
+            if [ "$1" == "${ds}" ]; then
+                DATASET="$1"
+                valid=1
+                break
+            fi
+        done
+        if [ -z "${valid}" ]; then
+            usage
+        fi
+    fi
+}
 
 ## Init
 
+check_input "$@"
+. "${DATA_DIR}"/"${DATASET}"/envs.sh
 reconfigure_slapd
 make_snakeoil_certificate
 chown -R openldap:openldap /etc/ldap

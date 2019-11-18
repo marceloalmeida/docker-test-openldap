@@ -1,0 +1,11 @@
+dn: cn=vigo,ou=individual,dc=thehightable,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: vigo
+sn: Seclorum
+givenName: Vigo
+mail: vigo@thehightable.com
+uid: vigo@thehightable.com
+userPassword:: cGFzc3dvcmQ=
